@@ -1,0 +1,17 @@
+{
+  "name": "milanojs-frontend-tools",
+  "version": "1.0.0",
+  "description": "just a demo",
+  "main": "Gruntfile.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/milano-js/frontend-tools.git"
+  },
+  "author": "Maurizio Mangione",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "load-grunt-tasks": "^0.4.0"
+  }
+}
