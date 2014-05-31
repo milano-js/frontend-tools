@@ -1,0 +1,16 @@
+@import "normalize";
+
+//variables
+$mainBg: #eee;
+$mainTxt: #333;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $mainTxt;
+  background-color: $mainBg;
+}
+
+//add css property that need a prefix
