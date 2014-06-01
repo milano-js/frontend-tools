@@ -10,13 +10,20 @@ module.exports = function (grunt) {
         jshintrc: '.jshintrc',
         reporter: require('jshint-stylish')
       }
+    },
+    sass: {
+      dist: {
+        files: {
+          'css/main.css': 'sass/main.scss'
+        }
+      }
     }
   });
 
   require('load-grunt-tasks')(grunt);
 
   grunt.registerTask('default', function(){
-    var tasks = ['jshint'];
+    var tasks = ['jshint', 'sass'];
 
     grunt.option('force', true);
     grunt.task.run(tasks);
