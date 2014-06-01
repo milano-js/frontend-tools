@@ -13,4 +13,8 @@ body {
   background-color: $mainBg;
 }
 
-//add css property that need a prefix
+.box {
+  height: 300px;
+  width: 300px;
+  transform: rotate(45deg);
+}
