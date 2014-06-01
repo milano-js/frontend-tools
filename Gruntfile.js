@@ -25,13 +25,23 @@ module.exports = function (grunt) {
       all: {
         src: ['css/main.css']
       }
+    },
+    watch: {
+      sass: {
+        files: 'sass/*.scss',
+        tasks: ['sass', 'autoprefixer']
+      },
+      jsHint: {
+        files: ['Gruntfile.js', 'js/*.js', '!js/all.js'],
+        tasks: ['jshint']
+      }
     }
   });
 
   require('load-grunt-tasks')(grunt);
 
   grunt.registerTask('default', function(){
-    var tasks = ['jshint', 'sass', 'autoprefixer'];
+    var tasks = ['jshint', 'sass', 'autoprefixer', 'watch'];
 
     grunt.option('force', true);
     grunt.task.run(tasks);
